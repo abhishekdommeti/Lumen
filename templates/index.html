@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lumen</title>
+    <style>
+        :root {
+            --primary-color: #4361ee;
+            --secondary-color: #3a0ca3;
+            --accent-color: #4cc9f0;
+            --text-color: #2b2d42;
+            --light-bg: #f8f9fa;
+            --card-bg: #ffffff;
+        }
+        
+        body {
+            background: linear-gradient(135deg, var(--light-bg) 0%, #e9ecef 100%);
+            font-family: "Inter", "Open Sans", sans-serif;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .top {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--secondary-color);
+            margin: 2rem 0;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .middle {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .instructions {
+            font-size: 1.1rem;
+            margin: 1.5rem 0;
+            padding-left: 1rem;
+        }
+
+        ol {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        li:hover {
+            transform: translateY(-3px);
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.3rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        a:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+
+        i {
+            font-style: normal;
+            color: var(--text-color);
+            font-size: 1rem;
+            display: block;
+            opacity: 0.9;
+        }
+
+        small {
+            display: block;
+            text-align: center;
+            margin-top: 3rem;
+            color: var(--text-color);
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .middle {
+                padding: 1rem;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <h1>Lumen</h1>
+        </div>
+
+        <div class="middle">
+            <h2>Simplify your text for better understanding</h2>
+            <p class="instructions">    
+                How to use:<br><br>
+                1. Select what kind of simplification you want<br>
+                2. Paste the text you want to simplify<br>
+                3. Click submit and get your simplified version
+            </p>
+        </div>
+
+        <ol>
+            <li>
+                <a href="/2nd_grade_summary">Generate 2nd Grade Summary</a>
+                <i>This will generate a summary of the text so that even a 2nd grader can understand.</i>
+            </li>
+            <li>
+                <a href="/TLDR">Generate TL;DR (Too Long; Didn't Read)</a>
+                <i>This will help you understand the context without having to read the whole thing.</i>
+            </li>
+            <li>
+                <a href="/One_Line_Summary">Generate One Line Summary</a>
+                <i>This gives you the whole thing condensed into one line.</i>
+            </li>
+        </ol>
+        
+        <small>Made by Abhishek</small>
+    </div>
+</body>
+</html>
