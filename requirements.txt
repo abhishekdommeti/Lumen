@@ -1,0 +1,8 @@
+Flask
+Flask-WTF
+Jinja2
+Werkzeug
+numpy
+pandas
+Wikipedia-API
+openai
